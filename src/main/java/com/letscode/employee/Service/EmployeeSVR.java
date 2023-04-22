@@ -8,4 +8,6 @@ public interface EmployeeSVR {
     EmployeeMDL createemployee(EmployeeMDL employeeMDL);
 
     List<EmployeeMDL> getAllEmployee();
+
+    boolean deletedEmployee(Long id);
 }
