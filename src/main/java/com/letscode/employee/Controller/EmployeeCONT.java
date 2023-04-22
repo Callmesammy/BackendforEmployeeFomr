@@ -35,7 +35,7 @@ public class EmployeeCONT {
    public ResponseEntity<Map<String, Boolean>> deletedEmployee(@PathVariable Long id){
         boolean deleted = false;
         deleted = employeeSVR.deletedEmployee(id);
-        Map<String, Boolean> response = new HashMap<>(id);
+        Map<String, Boolean> response = new HashMap<>();
         response.put("deleted", deleted);
         return ResponseEntity.ok(response);
    }
